@@ -1,0 +1,38 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 300
+    type: ALIAS
+    value: hugo-schaakclublievegem.pages.dev.
+  - ttl: 300
+    type: MX
+    values:
+    - exchange: route2.mx.cloudflare.net.
+      preference: 19
+    - exchange: route1.mx.cloudflare.net.
+      preference: 48
+    - exchange: route3.mx.cloudflare.net.
+      preference: 85
+  - ttl: 300
+    type: TXT
+    value: v=spf1 include:_spf.mx.cloudflare.net ~all
+_dmarc:
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=reject\; sp=reject\; adkim=s\; aspf=s\;
+beta:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: CNAME
+  value: hugo-schaakclublievegem.pages.dev.
+www:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 300
+  type: CNAME
+  value: hugo-schaakclublievegem.pages.dev.

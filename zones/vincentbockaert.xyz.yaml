@@ -1,0 +1,33 @@
+---
+? ''
+: - type: MX
+    values:
+    - exchange: mail.protonmail.ch.
+      preference: 10
+    - exchange: mailsec.protonmail.ch.
+      preference: 20
+  - type: TXT
+    values:
+    - protonmail-verification=71e8db583a7c5848b0bf82278e78278cc3ca20d7
+    - v=spf1 include:_spf.protonmail.ch mx -all
+_keybase:
+  type: TXT
+  value: keybase-site-verification=mXZXyWy_FY8p2ppk-LtNZIzEb8Ak0JyVcLVK5cJ0OfY
+protonmail2._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  type: CNAME
+  value: protonmail2.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
+protonmail3._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  type: CNAME
+  value: protonmail3.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
+protonmail._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  type: CNAME
+  value: protonmail.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.

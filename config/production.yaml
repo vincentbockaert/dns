@@ -1,0 +1,35 @@
+manager:
+  include_meta: True # Include octodns meta data in the zone file as a text record, default: False
+  max_workers: 2
+
+providers:
+  # source provider for the zone files
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones
+    default_ttl: 3600
+    enforce_order: True
+  # destination provider for the zone files (could use multiple providers here)
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    # Your Cloudflare account email address (required, optional if using token)
+    # email: env/CLOUDFLARE_EMAIL
+    token: env/CLOUDFLARE_TOKEN
+
+# List of zones to process
+zones:
+  schaakclublievegem.be.:
+    sources:
+      - config
+    targets:
+      - cloudflare
+  techheresy.com.:
+    sources:
+      - config
+    targets:
+      - cloudflare
+  vincentbockaert.xyz.:
+    sources:
+      - config
+    targets:
+      - cloudflare
