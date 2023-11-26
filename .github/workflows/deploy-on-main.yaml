@@ -16,4 +16,4 @@ jobs:
         env:
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
         with:
-          args: octodns-sync --config-file ./config/production.yaml --doit
+          args: octodns-sync --force --config-file ./config/production.yaml --doit
