@@ -8,7 +8,7 @@ providers:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones
     default_ttl: 3600
-    enforce_order: True
+    enforce_order: False
   # destination provider for the zone files (could use multiple providers here)
   cloudflare:
     class: octodns_cloudflare.CloudflareProvider

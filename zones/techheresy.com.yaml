@@ -6,51 +6,12 @@
   ttl: 300
   type: AAAA
   value: 2a01:4f8:c0c:4bb2::1
-2hmiqn4p6i4vsxvpmjgbom6wysrhzd7z._domainkey:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 600
+5x4i3c67zmrahv57stgk6hondhq2meby._domainkey.bw:
   type: CNAME
-  value: 2hmiqn4p6i4vsxvpmjgbom6wysrhzd7z.dkim.amazonses.com.
-'*':
-  octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: AAAA
-  value: 2a01:4f8:c0c:4bb2::1
-_amazonses:
-  ttl: 600
-  type: TXT
-  value: P8rRB5QrkZ0DLKRXVtnpD3RxVJctR68bpMkePJLvBg8=
-masker:
-- ttl: 600
-  type: MX
-  value:
-    exchange: feedback-smtp.eu-west-1.amazonses.com.
-    preference: 10
-- ttl: 600
-  type: TXT
-  value: v=spf1 include:amazonses.com -all
-mc:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 300
-  type: A
-  value: 78.46.226.83
-p2wi3oh55nsos6kkpfxksx2nypnzkpqw._domainkey:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 600
+  value: 5x4i3c67zmrahv57stgk6hondhq2meby.dkim.amazonses.com.
+uss43krwd3zhxrlhkm5wek4esd5rkykz._domainkey.bw:
   type: CNAME
-  value: p2wi3oh55nsos6kkpfxksx2nypnzkpqw.dkim.amazonses.com.
-ruin7l5mb435cgofhwfsy2birpu56cnx._domainkey:
-  octodns:
-    cloudflare:
-      proxied: false
-  ttl: 600
+  value: uss43krwd3zhxrlhkm5wek4esd5rkykz.dkim.amazonses.com.
+7wvtf6sl4i4cf4ij2kvhccr4pr3dwjmf._domainkey.bw:
   type: CNAME
-  value: ruin7l5mb435cgofhwfsy2birpu56cnx.dkim.amazonses.com.
+  value: 7wvtf6sl4i4cf4ij2kvhccr4pr3dwjmf.dkim.amazonses.com.
