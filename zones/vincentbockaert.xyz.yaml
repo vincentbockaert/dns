@@ -10,9 +10,17 @@
     values:
     - protonmail-verification=71e8db583a7c5848b0bf82278e78278cc3ca20d7
     - v=spf1 include:_spf.protonmail.ch mx -all
+  - type: CNAME
+    value: me-vincentbockaert-xyz.pages.dev.
 _keybase:
   type: TXT
   value: keybase-site-verification=mXZXyWy_FY8p2ppk-LtNZIzEb8Ak0JyVcLVK5cJ0OfY
+agent0.k3s.prod.hc:
+  type: AAAA
+  value: 2a01:4f8:1c1c:aecb::1
+me:
+  type: CNAME
+  value: me-vincentbockaert-xyz.pages.dev.
 protonmail2._domainkey:
   octodns:
     cloudflare:
@@ -31,3 +39,9 @@ protonmail._domainkey:
       proxied: false
   type: CNAME
   value: protonmail.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
+server0.k3s.prod.hc:
+  type: AAAA
+  value: 2a01:4f8:c0c:d585::1
+server1.k3s.prod.hc:
+  type: AAAA
+  value: 2a01:4f8:1c1e:5924::1
