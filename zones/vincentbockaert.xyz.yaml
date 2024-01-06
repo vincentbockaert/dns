@@ -10,7 +10,7 @@
     values:
     - protonmail-verification=71e8db583a7c5848b0bf82278e78278cc3ca20d7
     - v=spf1 include:_spf.protonmail.ch mx -all
-  - type: CNAME
+  - type: ALIAS
     value: me-vincentbockaert-xyz.pages.dev.
 _keybase:
   type: TXT
