@@ -19,8 +19,10 @@ _keybase:
   type: TXT
   value: keybase-site-verification=mXZXyWy_FY8p2ppk-LtNZIzEb8Ak0JyVcLVK5cJ0OfY
 agent0.k3s.prod.hc:
-  type: AAAA
-  value: 2a01:4f8:1c1c:aecb::1
+  - type: A
+    value: 167.235.144.199
+  - type: AAAA
+    value: 2a01:4f8:c0c:d585::1
 me:
   octodns:
     cloudflare:
@@ -37,8 +39,10 @@ protonmail._domainkey:
   type: CNAME
   value: protonmail.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
 server0.k3s.prod.hc:
-  type: AAAA
-  value: 2a01:4f8:c0c:d585::1
+  - type: A
+    value: 116.203.216.208
+  - type: AAAA
+    value: 2a01:4f8:1c1c:aecb::1
 master.k3s.prod.hc:
   - type: A
     value: 167.233.12.210
