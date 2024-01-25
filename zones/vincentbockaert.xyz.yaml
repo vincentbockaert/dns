@@ -43,11 +43,21 @@ protonmail._domainkey:
   value: protonmail.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
 server0.k3s.prod.hc:
   - type: A
-    value: 116.203.216.208
+    value: 23.88.57.115
   - type: AAAA
-    value: 2a01:4f8:1c1c:aecb::1
+    value: 2a01:4f8:1c1b:6894::1
+server1.k3s.prod.hc:
+  - type: A
+    value: 128.140.78.241
+  - type: AAAA
+    value: 2a01:4f8:1c1e:ac6f::1
+server2.k3s.prod.hc:
+  - type: A
+    value: 128.140.45.102
+  - type: AAAA
+    value: 2a01:4f8:1c1b:6e29::1
 master.k3s.prod.hc:
   - type: A
-    value: 167.233.12.210
+    value: 49.13.45.30
   - type: AAAA
-    value: 2a01:4f8:1c1d:134c::1
+    value: 2a01:4f8:1c1d:1384::1
