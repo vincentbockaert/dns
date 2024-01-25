@@ -64,6 +64,6 @@ server2.k3s.prod.hc:
     value: 2a01:4f8:1c1b:6e29::1
 master.k3s.prod.hc:
   - type: A
-    value: 49.13.45.30
+    value: 49.13.43.218
   - type: AAAA
-    value: 2a01:4f8:1c1d:1384::1
+    value: 2a01:4f8:1c1f:6648::1
