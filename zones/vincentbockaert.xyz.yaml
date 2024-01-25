@@ -41,6 +41,12 @@ protonmail3._domainkey:
 protonmail._domainkey:
   type: CNAME
   value: protonmail.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
+privatebin:
+  octodns:
+    cloudflare:
+      proxied: true
+  type: CNAME
+  value: master.k3s.prod.hc.vincentbockaert.xyz.
 server0.k3s.prod.hc:
   - type: A
     value: 23.88.57.115
