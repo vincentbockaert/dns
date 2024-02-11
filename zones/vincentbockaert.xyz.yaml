@@ -21,11 +21,11 @@ _dmarc:
 _keybase:
   type: TXT
   value: keybase-site-verification=mXZXyWy_FY8p2ppk-LtNZIzEb8Ak0JyVcLVK5cJ0OfY
-agent0.k3s.prod.hc:
+kubelb:
   - type: A
-    value: 167.235.144.199
+    value: 167.233.8.185
   - type: AAAA
-    value: 2a01:4f8:c0c:d585::1
+    value: 2a01:4f8:1c1d:10a1::1
 me:
   octodns:
     cloudflare:
@@ -46,24 +46,19 @@ privatebin:
     cloudflare:
       proxied: true
   type: CNAME
-  value: master.k3s.prod.hc.vincentbockaert.xyz.
+  value: kubelb.vincentbockaert.xyz.
 server0.k3s.prod.hc:
-  - type: A
-    value: 23.88.57.115
-  - type: AAAA
-    value: 2a01:4f8:1c1b:6894::1
-server1.k3s.prod.hc:
-  - type: A
-    value: 128.140.78.241
-  - type: AAAA
-    value: 2a01:4f8:1c1e:ac6f::1
-server2.k3s.prod.hc:
   - type: A
     value: 128.140.45.102
   - type: AAAA
     value: 2a01:4f8:1c1b:6e29::1
-master.k3s.prod.hc:
+server1.k3s.prod.hc:
   - type: A
-    value: 49.13.43.218
+    value: 23.88.57.115
   - type: AAAA
-    value: 2a01:4f8:1c1f:6648::1
+    value: 2a01:4f8:1c1b:6894::1
+server2.k3s.prod.hc:
+  - type: A
+    value: 128.140.78.241
+  - type: AAAA
+    value: 2a01:4f8:1c1e:ac6f::1
