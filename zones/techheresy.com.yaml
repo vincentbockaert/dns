@@ -1,17 +1,25 @@
 ---
 ? ''
-: octodns:
-    cloudflare:
-      proxied: true
-  ttl: 300
-  type: AAAA
-  value: 2a01:4f8:c0c:4bb2::1
-5x4i3c67zmrahv57stgk6hondhq2meby._domainkey.bw:
+: - octodns:
+      cloudflare:
+        proxied: true
+    ttl: 300
+    type: AAAA
+    value: 2a01:4f8:c0c:4bb2::1
+_dmarc:
+  type: TXT
+  value: v=DMARC1\; p=reject
+no-reply-aws:
+  - type: MX
+    value: 10 feedback-smtp.eu-central-1.amazonses.com.
+  - type: TXT
+    value: "v=spf1 include:amazonses.com ~all"
+okheg5ng267xebeg3cjiw472qtjehd4s._domainkey:
   type: CNAME
-  value: 5x4i3c67zmrahv57stgk6hondhq2meby.dkim.amazonses.com.
-uss43krwd3zhxrlhkm5wek4esd5rkykz._domainkey.bw:
+  value: okheg5ng267xebeg3cjiw472qtjehd4s.dkim.amazonses.com.
+rfzd4hvondwmprkpimespbdsk6qxzp5i._domainkey:
   type: CNAME
-  value: uss43krwd3zhxrlhkm5wek4esd5rkykz.dkim.amazonses.com.
-7wvtf6sl4i4cf4ij2kvhccr4pr3dwjmf._domainkey.bw:
+  value: rfzd4hvondwmprkpimespbdsk6qxzp5i.dkim.amazonses.com.
+wvf2y2kdlufficas5vokvtqikx5qlgkb._domainkey:
   type: CNAME
-  value: 7wvtf6sl4i4cf4ij2kvhccr4pr3dwjmf.dkim.amazonses.com.
+  value: wvf2y2kdlufficas5vokvtqikx5qlgkb.dkim.amazonses.com.
