@@ -11,7 +11,9 @@ _dmarc:
   value: v=DMARC1\; p=reject
 no-reply-aws:
   - type: MX
-    value: 10 feedback-smtp.eu-central-1.amazonses.com.
+    values:
+    - exchange: feedback-smtp.eu-central-1.amazonses.com.
+      preference: 10
   - type: TXT
     value: "v=spf1 include:amazonses.com ~all"
 okheg5ng267xebeg3cjiw472qtjehd4s._domainkey:
