@@ -2,9 +2,9 @@
 ? ''
 : - type: MX
     values:
-    - exchange: in1-smtp.messagingengine.com
+    - exchange: in1-smtp.messagingengine.com.
       preference: 10
-    - exchange: in2-smtp.messagingengine.com
+    - exchange: in2-smtp.messagingengine.com.
       preference: 20
   - type: TXT
     values:
