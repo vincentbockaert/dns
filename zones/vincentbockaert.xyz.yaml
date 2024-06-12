@@ -2,14 +2,13 @@
 ? ''
 : - type: MX
     values:
-    - exchange: mail.protonmail.ch.
+    - exchange: in1-smtp.messagingengine.com
       preference: 10
-    - exchange: mailsec.protonmail.ch.
+    - exchange: in2-smtp.messagingengine.com
       preference: 20
   - type: TXT
     values:
-    - protonmail-verification=71e8db583a7c5848b0bf82278e78278cc3ca20d7
-    - v=spf1 include:_spf.protonmail.ch mx -all
+    - v=spf1 include:spf.messagingengine.com -all
     - keybase-site-verification=hj6kiQg-lPjAmX23uNsJyC7Duj8ahn_wQEUCZVp8mCw
   - type: ALIAS
     value: me-vincentbockaert-xyz.pages.dev.
@@ -22,44 +21,18 @@ _dmarc:
 _keybase:
   type: TXT
   value: keybase-site-verification=mXZXyWy_FY8p2ppk-LtNZIzEb8Ak0JyVcLVK5cJ0OfY
-kubelb:
-  - type: A
-    value: 167.233.8.185
-  - type: AAAA
-    value: 2a01:4f8:1c1d:10a1::1
+fm1._domainkey:
+  type: CNAME
+  value: fm1.vincentbockaert.xyz.dkim.fmhosted.com.
+fm2._domainkey:
+  type: CNAME
+  value: fm2.vincentbockaert.xyz.dkim.fmhosted.com.
+fm3._domainkey:
+  type: CNAME
+  value: fm3.vincentbockaert.xyz.dkim.fmhosted.com.
 me:
   octodns:
     cloudflare:
       proxied: true
   type: CNAME
   value: me-vincentbockaert-xyz.pages.dev.
-protonmail2._domainkey:
-  type: CNAME
-  value: protonmail2.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
-protonmail3._domainkey:
-  type: CNAME
-  value: protonmail3.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
-protonmail._domainkey:
-  type: CNAME
-  value: protonmail.domainkey.daxdwij3h22rp3mr4kvkeokuurdra4if6ikhm2ndtbjr4gc54hbsq.domains.proton.ch.
-privatebin:
-  octodns:
-    cloudflare:
-      proxied: true
-  type: CNAME
-  value: kubelb.vincentbockaert.xyz.
-server0.k3s.prod.hc:
-  - type: A
-    value: 128.140.45.102
-  - type: AAAA
-    value: 2a01:4f8:1c1b:6e29::1
-server1.k3s.prod.hc:
-  - type: A
-    value: 23.88.57.115
-  - type: AAAA
-    value: 2a01:4f8:1c1b:6894::1
-server2.k3s.prod.hc:
-  - type: A
-    value: 128.140.78.241
-  - type: AAAA
-    value: 2a01:4f8:1c1e:ac6f::1
