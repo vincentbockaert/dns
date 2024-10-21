@@ -9,6 +9,11 @@
 _dmarc:
   type: TXT
   value: v=DMARC1\; p=reject
+globaleaks:
+  - type: A
+    value: 116.203.133.48
+  - type: AAAA
+    value: 2a01:4f8:c0c:cc::1
 no-reply-aws:
   - type: MX
     values:
