@@ -9,7 +9,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: octodns-sync
         # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runsstepsuses
         uses: docker://octodns/cloudflare:2023.05@sha256:762f17b63e32c2f449378fd961a3323b3f3213a9cc7cb8a22691062b0ec8e0f0
