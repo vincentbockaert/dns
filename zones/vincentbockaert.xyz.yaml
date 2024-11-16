@@ -2,14 +2,15 @@
 ? ''
 : - type: MX
     values:
-    - exchange: in1-smtp.messagingengine.com.
+    - exchange: mail.protonmail.ch.
       preference: 10
-    - exchange: in2-smtp.messagingengine.com.
+    - exchange: mailsec.protonmail.ch.
       preference: 20
   - type: TXT
     values:
-    - v=spf1 include:spf.messagingengine.com -all
+    - v=spf1 include:_spf.protonmail.ch -all
     - keybase-site-verification=hj6kiQg-lPjAmX23uNsJyC7Duj8ahn_wQEUCZVp8mCw
+    - protonmail-verification=45eba7cee94596abeb93d6ab6af91f815d3550f2
   - type: ALIAS
     value: me-vincentbockaert-xyz.pages.dev.
     octodns:
@@ -21,15 +22,15 @@ _dmarc:
 _keybase:
   type: TXT
   value: keybase-site-verification=mXZXyWy_FY8p2ppk-LtNZIzEb8Ak0JyVcLVK5cJ0OfY
-fm1._domainkey:
+protonmail._domainkey:
   type: CNAME
-  value: fm1.vincentbockaert.xyz.dkim.fmhosted.com.
-fm2._domainkey:
+  value: protonmail.domainkey.d4agorf5di3uecfacptbsmummjzyuo7lfch2k2tp6pvo7lgrpi44a.domains.proton.ch.
+protonmail2._domainkey:
   type: CNAME
-  value: fm2.vincentbockaert.xyz.dkim.fmhosted.com.
-fm3._domainkey:
+  value: protonmail2.domainkey.d4agorf5di3uecfacptbsmummjzyuo7lfch2k2tp6pvo7lgrpi44a.domains.proton.ch.
+protonmail3._domainkey:
   type: CNAME
-  value: fm3.vincentbockaert.xyz.dkim.fmhosted.com.
+  value: protonmail3.domainkey.d4agorf5di3uecfacptbsmummjzyuo7lfch2k2tp6pvo7lgrpi44a.domains.proton.ch.
 me:
   octodns:
     cloudflare:
