@@ -31,6 +31,12 @@ protonmail2._domainkey:
 protonmail3._domainkey:
   type: CNAME
   value: protonmail3.domainkey.d4agorf5di3uecfacptbsmummjzyuo7lfch2k2tp6pvo7lgrpi44a.domains.proton.ch.
+2b372491-6d98-4ea5-8339-e7c1ea5632f4:
+  type: A
+  values:
+  - 157.180.116.82
+  - 157.180.80.145
+  - 157.180.120.165
 me:
   octodns:
     cloudflare:
